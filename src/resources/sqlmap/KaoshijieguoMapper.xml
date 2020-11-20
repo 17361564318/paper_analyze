@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spring.dao.KaoshijieguoMapper">
+    <resultMap id="BaseResultMap" type="com.spring.entity.Kaoshijieguo">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+                            <result column="tikubianhao" property="tikubianhao" jdbcType="VARCHAR"/>
+                                    <result column="tikumingcheng" property="tikumingcheng" jdbcType="VARCHAR"/>
+                                    <result column="banji" property="banji" jdbcType="VARCHAR"/>
+                                    <result column="faburen" property="faburen" jdbcType="VARCHAR"/>
+                                    <result column="kaoshibianhao" property="kaoshibianhao" jdbcType="VARCHAR"/>
+                                    <result column="danxuantidefen" property="danxuantidefen" jdbcType="VARCHAR"/>
+                                    <result column="jiandatidefen" property="jiandatidefen" jdbcType="VARCHAR"/>
+                                    <result column="tiankongtidefen" property="tiankongtidefen" jdbcType="VARCHAR"/>
+                                    <result column="zongdefen" property="zongdefen" jdbcType="VARCHAR"/>
+                                    <result column="kaoshiren" property="kaoshiren" jdbcType="VARCHAR"/>
+                                                    <result column="tikuid" property="tikuid" jdbcType="INTEGER"/>
+                <result column="addtime" property="addtime" jdbcType="VARCHAR"/>
+            </resultMap>
+    <sql id="Base_Column_List">
+        id, tikubianhao, tikumingcheng, banji, faburen, kaoshibianhao, danxuantidefen, jiandatidefen, tiankongtidefen, zongdefen, kaoshiren, tikuid, addtime    </sql>
+    </mapper>
